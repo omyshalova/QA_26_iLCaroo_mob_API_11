@@ -85,7 +85,7 @@ public class DeleteCarByIdTestOkHttp implements BaseApi {
             throw new RuntimeException(e);
         }
         Assert.assertTrue(response.isSuccessful());
-
+//test
     }
 
     @Test
