@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7061f6-2b36-4ca3-9bc1-16f0dd6cf2e3" name="Changes" comment="added regPositiveTest">
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/CarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/rest/RegistrationTestRest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +79,8 @@
     "Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdNegativeTest_WOId.executor": "Run",
     "Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdNegativeTest_WrongToken.executor": "Run",
     "Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdPositiveTest.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.RegistrationTestRest.registrationPositiveTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -85,7 +90,7 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdNegativeTest_WrongToken">
+  <component name="RunManager" selected="Gradle.RegistrationTestRest.registrationPositiveTest">
     <configuration name="AddNewCarTestsOkHttp.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -182,7 +187,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTests.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTestRest.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -195,7 +200,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;mobile_tests.RegistrationTests.registrationPositiveTest&quot;" />
+            <option value="&quot;rest.RegistrationTestRest.registrationPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -208,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegistrationTestRest.registrationPositiveTest" />
         <item itemvalue="Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdNegativeTest_WrongToken" />
         <item itemvalue="Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdNegativeTest_WOId" />
         <item itemvalue="Gradle.DeleteCarByIdTestOkHttp.deleteCarByIdPositiveTest" />
         <item itemvalue="Gradle.AddNewCarTestsOkHttp.addNewCarPositiveTest" />
-        <item itemvalue="Gradle.RegistrationTests.registrationPositiveTest" />
       </list>
     </recent_temporary>
   </component>
