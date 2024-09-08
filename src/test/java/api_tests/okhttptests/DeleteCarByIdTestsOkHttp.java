@@ -12,19 +12,19 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class DeleteCarByIdTestOkHttp implements BaseApi {
+public class DeleteCarByIdTestsOkHttp implements BaseApi {
     TokenDto token = new TokenDto();
     CarDto car = new CarDto();
 
     @BeforeClass
-    public void login(){
+    public void login() {
         RegistrationBodyDto registrationBodyDto = RegistrationBodyDto.builder()
                 .username("789baggins_bilbo@mail.com")
                 .password("Zxc12345!")
                 .build();
         RequestBody requestBody = RequestBody.create(GSON.toJson(registrationBodyDto), JSON);
         Request request = new Request.Builder()
-                .url(BASE_URL+LOGIN_URL)
+                .url(BASE_URL + LOGIN_URL)
                 .post(requestBody)
                 .build();
         Response response;
@@ -43,9 +43,9 @@ public class DeleteCarByIdTestOkHttp implements BaseApi {
     }
 
     @BeforeMethod
-    public void getSerialNumber(){
+    public void getSerialNumber() {
         Request request = new Request.Builder()
-                .url(BASE_URL+GET_USER_CARS_URL)
+                .url(BASE_URL + GET_USER_CARS_URL)
                 .addHeader("Authorization", token.getAccessToken())
                 .get()
                 .build();
@@ -56,50 +56,47 @@ public class DeleteCarByIdTestOkHttp implements BaseApi {
             throw new RuntimeException(e);
         }
         CarsDto carsDto;
-        if(response.isSuccessful()) {
+        if (response.isSuccessful()) {
             try {
                 carsDto = GSON.fromJson(response.body().string(), CarsDto.class);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
             car = carsDto.getCars()[0];
-            System.out.println("car -> " + car);
-        }else {
+            System.out.println("car -->" + car);
+        } else
             System.out.println("get all user car is not successful");
-        }
     }
 
     @Test
-    public void deleteCarByIdPositiveTest(){
+    public void deleteCarByIdPositiveTest() {
         String idCar = car.getSerialNumber();
-        Request request  = new Request.Builder()
-                .url(BASE_URL+DELETE_CAR_URL+idCar)
+        Request request = new Request.Builder()
+                .url(BASE_URL + DELETE_CAR_URL + idCar)
                 .addHeader("Authorization", token.getAccessToken())
                 .delete()
                 .build();
         Response response;
         try {
             response = OK_HTTP_CLIENT.newCall(request).execute();
-            System.out.println("Response: " + response);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         Assert.assertTrue(response.isSuccessful());
-//test
     }
 
     @Test
-    public void deleteCarByIdNegativeTest_WOId(){
+    public void deleteCarByIdNegativeTest_WOId() {
         String idCar = car.getSerialNumber();
-        Request request  = new Request.Builder()
-                .url(BASE_URL+DELETE_CAR_URL)
+        Request request = new Request.Builder()
+                .url(BASE_URL + DELETE_CAR_URL)
                 .addHeader("Authorization", token.getAccessToken())
                 .delete()
                 .build();
         Response response;
         try {
             response = OK_HTTP_CLIENT.newCall(request).execute();
-            System.out.println("Response: " + response);
+            System.out.println(response);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -109,23 +106,21 @@ public class DeleteCarByIdTestOkHttp implements BaseApi {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        System.out.println("Message: " + errorMessageDtoString.getMessage());
-        Assert.assertEquals(errorMessageDtoString.getStatus(), 500);
+        System.out.println(errorMessageDtoString.getMessage());
+        Assert.assertEquals(errorMessageDtoString.getStatus(), 400);
     }
-
     @Test
-    public void deleteCarByIdNegativeTest_WrongToken(){
+    public void deleteCarByIdNegativeTest_wrongToken() {
         String idCar = car.getSerialNumber();
-        Request request  = new Request.Builder()
-                .url(BASE_URL+DELETE_CAR_URL+idCar)
-                .addHeader("Authorization", token.getAccessToken()+"wrong")
+        Request request = new Request.Builder()
+                .url(BASE_URL + DELETE_CAR_URL+idCar)
+                .addHeader("Authorization", "1111111asdqwdqwd44")
                 .delete()
                 .build();
         Response response;
         try {
             response = OK_HTTP_CLIENT.newCall(request).execute();
-            System.out.println("Response: " + response);
+            System.out.println(response);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -135,8 +130,7 @@ public class DeleteCarByIdTestOkHttp implements BaseApi {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-        System.out.println("Message: " + errorMessageDtoString.getMessage());
+        System.out.println(errorMessageDtoString.getMessage());
         Assert.assertEquals(errorMessageDtoString.getStatus(), 401);
     }
 }
