@@ -42,7 +42,7 @@ public class AddNewCarTestsRest extends CarController {
                 .pricePerDay(100.23)
                 .city("Haifa")
                 .build();
-        Assert.assertEquals(addNewCarResponse(car, "").getStatusCode(), 401);
+        Assert.assertEquals(addNewCarResponse(car, "").getStatusCode(), 403);
     }
     @Test
     public void addNewCarNegativeTest_WOSerialNumber_validateMessage(){

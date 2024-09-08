@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7061f6-2b36-4ca3-9bc1-16f0dd6cf2e3" name="Changes" comment="added okhttp">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QA_26_iLCaroo_mob_API.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/QA_26_iLCaroo_mob_API.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/CarsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/CarsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/interfaces/BaseApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/interfaces/BaseApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/okhttptests/DeleteCarByIdTestOkHttp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rest/RegistrationTestRest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/okhttptests/DeleteCarByIdTestsOkHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/okhttptests/DeleteCarByIdTestsOkHttp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_tests/rest/AddNewCarTestsRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_tests/rest/AddNewCarTestsRest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,9 +69,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AddNewCarTestsOkHttp.executor": "Run",
+    "Gradle.AddNewCarTestsRest.addNewCarPositiveTest.executor": "Run",
+    "Gradle.AddNewCarTestsRest.executor": "Run",
+    "Gradle.DeleteCarByIdTestsOkHttp.executor": "Run",
+    "Gradle.DeleteCarTestsRest.executor": "Run",
+    "Gradle.GetAllUserCarTestsRest.executor": "Run",
+    "Gradle.RegistrationTestsOkHttp.executor": "Run",
+    "Gradle.RegistrationTestsRest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/QA_Auto_Projects/QA_20/iCarro_API_QA-20",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -98,8 +91,8 @@
       <recent name="dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTestsRest.registrationPositiveTest">
-    <configuration name="DeleteCarByIdTestsOkHttp.deleteCarByIdNegativeTest_WOId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.DeleteCarTestsRest">
+    <configuration name="AddNewCarTestsRest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -112,7 +105,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.okhttptests.DeleteCarByIdTestsOkHttp.deleteCarByIdNegativeTest_WOId&quot;" />
+            <option value="&quot;api_tests.rest.AddNewCarTestsRest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,7 +116,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCarByIdTestsOkHttp.deleteCarByIdNegativeTest_wrongToken" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddNewCarTestsRest.addNewCarPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.okhttptests.DeleteCarByIdTestsOkHttp.deleteCarByIdNegativeTest_wrongToken&quot;" />
+            <option value="&quot;api_tests.rest.AddNewCarTestsRest.addNewCarPositiveTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +140,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DeleteCarByIdTestsOkHttp.deleteCarByIdPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteCarTestsRest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +153,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.okhttptests.DeleteCarByIdTestsOkHttp.deleteCarByIdPositiveTest&quot;" />
+            <option value="&quot;api_tests.rest.DeleteCarTestsRest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +164,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTestsOkHttp.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GetAllUserCarTestsRest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -184,7 +177,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.okhttptests.RegistrationTestsOkHttp.registrationPositiveTest&quot;" />
+            <option value="&quot;api_tests.rest.GetAllUserCarTestsRest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -195,7 +188,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="RegistrationTestsRest.registrationPositiveTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RegistrationTestsRest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -208,7 +201,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;api_tests.rest.RegistrationTestsRest.registrationPositiveTest&quot;" />
+            <option value="&quot;api_tests.rest.RegistrationTestsRest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -221,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegistrationTestsRest.registrationPositiveTest" />
-        <item itemvalue="Gradle.DeleteCarByIdTestsOkHttp.deleteCarByIdNegativeTest_wrongToken" />
-        <item itemvalue="Gradle.DeleteCarByIdTestsOkHttp.deleteCarByIdNegativeTest_WOId" />
-        <item itemvalue="Gradle.RegistrationTestsOkHttp.registrationPositiveTest" />
-        <item itemvalue="Gradle.DeleteCarByIdTestsOkHttp.deleteCarByIdPositiveTest" />
+        <item itemvalue="Gradle.DeleteCarTestsRest" />
+        <item itemvalue="Gradle.GetAllUserCarTestsRest" />
+        <item itemvalue="Gradle.AddNewCarTestsRest" />
+        <item itemvalue="Gradle.AddNewCarTestsRest.addNewCarPositiveTest" />
+        <item itemvalue="Gradle.RegistrationTestsRest" />
       </list>
     </recent_temporary>
   </component>

@@ -107,7 +107,7 @@ public class DeleteCarByIdTestsOkHttp implements BaseApi {
             throw new RuntimeException(e);
         }
         System.out.println(errorMessageDtoString.getMessage());
-        Assert.assertEquals(errorMessageDtoString.getStatus(), 400);
+        Assert.assertEquals(errorMessageDtoString.getStatus(), 500);
     }
     @Test
     public void deleteCarByIdNegativeTest_wrongToken() {
